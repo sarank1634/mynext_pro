@@ -32,9 +32,10 @@ export default function RootLayout({
           <Link href="/home">Home</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
-          </div>
-      {children}
-    </body>
+          <Link href="/users">Users</Link>
+        </div>
+        {children}
+      </body>
     </html >
   );
 }

@@ -1,14 +1,16 @@
 "use client"
 import { useState } from "react"
+import ButtonComponent from "./button"
 
+export default async function contact() {
+    console.log("hey this is server or client?");
 
-export default function contact() {
-    const [count,setCount] = useState(0)
-    console.log("hey this is server or client?")
-    return (
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const data = await response.json();
+    console.log(data);
+       return (
         <div>
-            {""}
-            <button onClick={() => alert("hello")}>click me</button>
+             <ButtonComponent/>
         </div>
     )
 }
