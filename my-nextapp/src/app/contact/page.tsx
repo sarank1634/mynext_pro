@@ -1,7 +1,14 @@
+"use client"
+import { useState } from "react"
+
+
 export default function contact() {
+    const [count,setCount] = useState(0)
+    console.log("hey this is server or client?")
     return (
         <div>
-            <h1>Contact page</h1>
+            {""}
+            <button onClick={() => alert("hello")}>click me</button>
         </div>
     )
 }

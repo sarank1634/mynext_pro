@@ -1,1 +1,3 @@
-# mynext_pro
+# mynext_pro 
+
+client and  server component
